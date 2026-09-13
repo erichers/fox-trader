@@ -6,10 +6,9 @@
 **/*secrets*
 **/*credential*
 **/*credentials*
-**/*token*
-**/*tokens*
-**/*api*key*
-**/*apikey*
+**/*token*.json
+**/*tokens*.json
+**/oauth-tokens*
 **/*.pem
 **/*.key
 **/*.p12
@@ -18,12 +17,8 @@
 **/id_ed25519*
 .my.cnf
 **/.my.cnf
-**/oauth*
-**/OAuth*
 
-# Brokers / personal trading accounts
-**/robinhood*
-**/Robinhood*
+# Broker auth stores (keep source code; block key/token files)
 **/rh_oauth*
 **/rh-oauth*
 **/alpaca*key*
@@ -31,6 +26,17 @@
 !**/alpaca*.ts
 !**/alpaca*.js
 !**/alpaca*.md
+!**/alpaca*.tsx
+
+# Allow OAuth *provider* source; block token dumps
+!**/oauth*.ts
+!**/oauth*.js
+!**/oauth*.tsx
+!**/oauth*.md
+
+# Allow broker adapter source under backend/src
+!backend/src/rh/**
+!backend/src/brokers/**
 
 # Local personal / machine paths & notes
 **/personal/
@@ -41,6 +47,8 @@
 **/*.local.*
 notes/personal/
 notes/desk/*private*
+.claude/
+scratch/
 
 # Runtime / build
 node_modules/
@@ -53,3 +61,22 @@ tmp/
 .DS_Store
 coverage/
 .cache/
+.vite/
+*.tsbuildinfo
+backend/data/
+db/backups/
+*.sql
+!db/schema.sql
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+*.orig
+*.har
+.npmrc
+target/
+app-native/src-tauri/target/
+app-native/src-tauri/gen/
+**/*.app
+**/*.dmg
