@@ -37,6 +37,7 @@ import { knowledgeStats } from '../rag.js';
 import { getFutures, leadingFuture } from '../market/futures.js';
 import { runLearning, listRuns, listIdeas, learningStatus } from '../learning.js';
 import { armPaperFromBacktests } from '../paperArm.js';
+import { listLeapsIdeas, enableLeapsIdea, observeLeapsIdea } from '../ideas.js';
 
 /** Attach each bot's EFFECTIVE risk (bot value, else the global trade default, with the
  *  source of every field) to a bot list. Additive — no existing field changes. */
@@ -967,6 +968,21 @@ export async function registerRoutes(app: FastifyInstance) {
     } catch (e: any) {
       return reply.code(409).send({ error: e?.message || String(e) });
     }
+  });
+
+  // ── LEAPS / fundamental Ideas desk (observe; enable = intent only) ─────────
+  app.get('/api/ideas/leaps', async () => listLeapsIdeas());
+  app.post('/api/ideas/leaps/:id/enable', async (req, reply) => {
+    const id = String((req.params as any)?.id || '');
+    const r = await enableLeapsIdea(id);
+    if (!r.ok) return reply.code(404).send(r);
+    return r;
+  });
+  app.post('/api/ideas/leaps/:id/observe', async (req, reply) => {
+    const id = String((req.params as any)?.id || '');
+    const r = await observeLeapsIdea(id);
+    if (!r.ok) return reply.code(404).send(r);
+    return r;
   });
 
   // ── Chat / agent ──────────────────────────────────────────────────────────

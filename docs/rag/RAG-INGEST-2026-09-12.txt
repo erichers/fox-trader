@@ -1,0 +1,17 @@
+Fox desk research pack 2026-09-12 (observe/paper only; META TSLA QQQ).
+
+MACRO: FOMC Sep 15-16 2026; markets after hot Aug CPI priced high odds of +25bp hike from 3.50-3.75% toward 3.75-4.00%; SEP and presser matter for Nasdaq duration. 10y yields cited near ~5% into the meeting. Energy/geopolitics and AI hyperscaler capex/debt are secondary risk themes for QQQ.
+
+META: Q2 2026 revenue ~$60.8B beat, EPS $6.18 miss on legal/severance; Q3 revenue guide $61-64B; FY26 capex $130-145B; Q2 FCF compressed to ~$784M. AI ad tools (GEM/Advantage+) and business agents are the bull fundamental. Meta Connect Sep 23-24 2026 focuses AI glasses/Muse/wearables; Q3 earnings estimated ~Oct 26. Watch book context: long META Jan27 LEAPS; short near-dated META call hedge (strikes private). Status for new LEAPS ideas: observe.
+
+TSLA: Cybercab paid Austin deployment ~Sep 3 2026; NHTSA Audit Query AQ26002 on Cybercab FMVSS self-certification (~1000 vehicles estimated) — audit not recall, but scaling risk. Robotaxi unsupervised miles claimed 1M; FSD updates (v14.3.x collision evasion; v15 safety narrative). Q3 earnings ~Oct 21 unconfirmed. SpaceX Starship Flight 14 is sentiment spillover only (not a Fox ticker). Watch book: long TSLA Jun27 LEAPS (strike private). Status: observe.
+
+QQQ: Nasdaq-100 proxy for rates/AI multiple risk around FOMC and Oct mega-cap earnings. Secondary technical chatter on mid-700 support zones unverified without live quotes.
+
+SWING LAW: never 0DTE; swings 2-14 DTE; LEAPS may hold overnight but remain observe until click-to-enable; cut -10%; trail +10% to breakeven; soft TP 25%; paper caps $10k / 50% concentration / 50% daily-loss.
+
+BOTS: iterate winners Bollinger Reversion, Idea G1 snapback, Intraday MR, EMA 9/21, MACD, Trend Follower, ORB — add event blackouts (FOMC, Connect, earnings); MACD prefer confirm-only; LEAPS cards separate from intraday bots; UI needs observe→enable, catalyst calendar, book conflict panel, LLM roles Hypothesis/Code/Critic/Statistician/Risk.
+
+TOP WARNINGS: (1) FOMC Sep 16 vol (2) META FCF/capex (3) NHTSA Cybercab audit (4) no live prices in pack — refresh before enable (5) book concentration already live on META/TSLA LEAPs.
+
+Sources include CME/Polymarket rate odds coverage, Meta IR Q2 2026 release, Meta Connect pages, NHTSA AQ26002 materials, Electrek/Teslarati autonomy coverage, Yahoo/Public earnings calendars, iShares/Capital.com QQQ macro notes. Research ideas only — not orders.

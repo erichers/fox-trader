@@ -15,6 +15,8 @@ Replaces `erichers/rh-trader` as the Fox desk home going forward.
 - Setup: [`docs/SETUP.md`](docs/SETUP.md) — ports `8011` / `8888`, `desk-up.sh`, caps, run without secrets
 - Security notes: [`docs/SECURITY.md`](docs/SECURITY.md)
 - Screenshots: [`docs/screenshots/`](docs/screenshots/)
+- **LEAPS Ideas desk:** open `http://127.0.0.1:8011/#/ideas` after `./scripts/desk-up.sh` — L1–L6 cards stay **observe**; Enable only records intent (no orders)
+- Sep 12 research / RAG pack: [`docs/rag/`](docs/rag/) · desk notes: [`notes/desk/`](notes/desk/)
 
 ![Desk home (observe)](docs/screenshots/dashboard.png)
 
@@ -39,6 +41,15 @@ cp .env.example .env   # add your Alpaca *paper* keys locally
 ```
 
 Then open `http://127.0.0.1:8011/` (optional Apache on `:8888`).
+
+## LEAPS Ideas (observe)
+
+Seeded cards **IDEA-L1…L6** (META / TSLA / QQQ) from [`notes/desk/LEAPS-IDEAS-2026-09-12.md`](notes/desk/LEAPS-IDEAS-2026-09-12.md).
+
+1. `./scripts/desk-up.sh`
+2. Phone or desktop: [http://127.0.0.1:8011/#/ideas](http://127.0.0.1:8011/#/ideas) (or MAMP `:8888/#/ideas`)
+3. Tap **Enable (observe)** to record intent only — never places tickets, never arms bots
+4. Caps still apply later: `$10k` / `50%` conc / `50%` daily-loss · never 0DTE
 
 ## What stays out of git
 

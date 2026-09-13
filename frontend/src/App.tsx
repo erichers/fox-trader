@@ -19,6 +19,7 @@ import Settings from './views/Settings';
 import WatchlistView from './views/Watchlist';
 import BacktestView from './views/Backtest';
 import PlaybooksView from './views/Playbooks';
+import IdeasView from './views/Ideas';
 import ChartsView from './views/Charts';
 import OptionsView from './views/Options';
 import CampaignView from './views/Campaign';
@@ -53,6 +54,7 @@ const NAV: { label?: string; items: NavItem[] }[] = [
     { to: '/learning', label: 'Learning', icon: 'learn' },
     { to: '/bots', label: 'Bots', icon: 'bot' },
     { to: '/strategies', label: 'Strategy Library', icon: 'library' },
+    { to: '/ideas', label: 'LEAPS Ideas', icon: 'library' },
     { to: '/playbooks', label: 'Playbooks', icon: 'playbook' },
     { to: '/backtest', label: 'Backtest', icon: 'backtest' },
   ] },
@@ -281,6 +283,7 @@ export default function App() {
               <Route path="/bots" element={<BotsView />} />
               <Route path="/quickbots" element={<QuickBotsView />} />
               <Route path="/strategies" element={<StrategiesView />} />
+              <Route path="/ideas" element={<IdeasView />} />
               <Route path="/playbooks" element={<PlaybooksView />} />
               <Route path="/backtest" element={<BacktestView />} />
               <Route path="/watchlist" element={<WatchlistView />} />
