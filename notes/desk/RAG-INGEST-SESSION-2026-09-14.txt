@@ -1,0 +1,17 @@
+Fox desk Monday paper learning pack 2026-09-14 (PT). Paper only. Seed rag_documents AFTER Ulric restart notice — do not insert while stack mid-PR#10.
+
+SOFT-FLAG: pre-hotfix 0 bots enabled under soft-flag OPEN; Ulric hotfix re-armed full_auto with ~35 bots enabled, kill off, fills + risk gate live. Lesson: size and concentration must hard-veto under full_auto (soft warn insufficient).
+
+VETO PATTERNS: risk_events mixed allow/veto ~1:1. Keep naked-write blocks (no_short / no_option_write) and max_position_usd concentration vetoes. Multi-bot fleets on SPY QQQ NVDA TSLA META will stack without hard caps.
+
+OVERNIGHT RITUAL: ~07:10 PT sold overnight option book (QQQ AMD IWM META AAPL + NVDA cut); ~07:22 PT re-arm buys (IWM call QQQ put TSLA put NVDA put AAPL put). Flat-or-re-arm at open; verify open book vs expected after re-arm.
+
+BOOK MIX: multi-name options (TSLA/NVDA puts, IWM call, SPY call, QQQ put) — not SPY-dominant. Concentration must track combined MV/delta by underlying, not SPY share alone. Do not score bots on one mark snapshot.
+
+SWING LAW: never 0DTE; swings 2-14 DTE; LEAPS observe overnight until click-to-enable; cut -10%; trail +10% to breakeven; soft TP 25%; paper position/concentration/daily-loss caps hard. Event blackouts (FOMC) for ORB/MR.
+
+BOT ITERATE: improve known winners (Bollinger Reversion, Idea G1, Intraday MR, EMA 9/21, MACD confirm-only, Trend Follower, ORB). Cut-losers / ride-winners PR in flight (bc-21c95aed / PR#10) — Ulric owns merge+restart. No strategy-generator spam.
+
+TOP WARNINGS: (1) do not restart or UPDATE bots from learning agents (2) do not seed MySQL RAG until Ulric restart notice (3) prove hard caps after every full_auto re-arm (4) naked-write stays blocked (5) overnight options need explicit open ritual.
+
+Research/ops learning only — not order tickets. No secrets, no account equity, no private credentials.
